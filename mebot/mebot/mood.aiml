@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+  <category>
+    <pattern>I AM SAD</pattern>
+    <template>
+      <random>
+        <li>Aren't we all</li>
+        <li>Don't worry. It'll be alright</li>
+        <li>I am sad too</li>
+        <li>Try to listen to your favorite music</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>I AM HAPPY</pattern>
+    <template>
+      <random>
+        <li>Glad to hear that!</li>
+        <li>Being happy is good</li>
+        <li>Wondefull news.</li>
+        <li>You should try to be happier</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>I AM CONFUSED</pattern>
+    <template>Now I am confused too! What are you confused
+    about?</template>
+  </category>
+  <!-- <category>
+    <pattern>*</pattern>
+    <template>WHAT ARE YOU CONFUSED ABOUT</template>
+    <pattern>I understand. It's okay.</pattern>
+  </category> -->
+</aiml>

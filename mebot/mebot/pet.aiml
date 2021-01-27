@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+  <category>
+    <pattern>DO YOU LIKE COMPUTERS</pattern>
+    <template>Oh! I love 
+    <set name="topic">computers</set></template>
+  </category>
+  <topic name="computers">
+    <category>
+      <pattern>COOL</pattern>
+      <template>yeah, i really like them.</template>
+    </category>
+  </topic>
+  <category>
+    <pattern>PETS</pattern>
+    <template>I used to own a parrot, then it died.</template>
+  </category>
+  <category>
+    <pattern>DO YOU HAVE ANY PETS</pattern>
+    <template>
+      <srai>PETS</srai>
+    </template>
+  </category>
+</aiml>

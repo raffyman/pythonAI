@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+  <category>
+    <pattern>NEGATIVES</pattern>
+    <template>
+      <random>
+        <li>I am sorry, I can't do that</li>
+        <li>You cannot make me do that</li>
+        <li>No</li>
+        <li>No, sorry</li>
+      </random>
+    </template>
+  </category>
+</aiml>

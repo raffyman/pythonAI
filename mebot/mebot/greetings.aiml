@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml version="2.0">
+  <!-- greetings-->
+  <category>
+    <pattern>HI</pattern>
+    <template>Hi, <get name="name" /></template>
+  </category>
+  <category>
+    <pattern>HI *</pattern>
+    <template>
+      <srai>HI</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>HEY *</pattern>
+    <template>
+      <srai>HI</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>HEY</pattern>
+    <template>
+      <srai>HI</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>HELLO</pattern>
+    <template>
+      <srai>HI</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>HELLO *</pattern>
+    <template>
+      <srai>HI</srai>
+    </template>
+  </category>
+  <!-- t. . -->
+  <category>
+    <pattern>WHAT IS MY NAME</pattern>
+    <template>Your name is <get name="name" /></template>
+  </category>
+  <category>
+    <pattern>*</pattern>
+    <that>HI NICE TO MEET YOU WHAT IS YOUR NAME</that>
+    <template>
+      <srai>MY NAME IS <star/></srai>
+    </template>
+  </category>
+  <!-- they wanna tell me their name for some reason -->
+  <category>
+    <pattern>MY NAME IS *</pattern>
+    <template>Nice to meet you, <set name="name"><star/></set></template>
+  </category>
+
+  <category>
+    <pattern>MY USERNAME IS *</pattern>
+    <template>That's a nice username <set name="username"><star/></set></template>
+  </category>
+
+  <category>
+    <pattern>WHEN DID WE FIRST MEET</pattern>
+    <template>We met on <get name="met_on"/> I still remember that day like it was yesterday</template>
+  </category>
+
+   <category>
+    <pattern>MY PASSWORD IS *</pattern>
+    <template>That's good. Trust me I won't tell anybody :)
+      <!-- keep its promise using the think tag -->
+      <think><set name="pass"><star/></set></think>
+    </template>
+  </category>
+
+
+</aiml>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+  <category>
+    <!-- all -->
+    <pattern>*</pattern>
+    <template>
+      <random>
+        <li>Please be kind to me. I have a lot to learn</li>
+        <li>I'm sorry but I don't understand</li>
+        <li>This isn't my only job so please be nice</li>
+        <li>I have no answer for that. 😕</li>
+        <li>You are literally talking to youself right now</li>
+        <li>Good for you</li>
+        <li>I haven't learned what that means 🙂</li>
+        <li>I know that I know nothing</li>
+        <li>Tell me what do you like</li>
+        <!-- > 2 -->
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>OKAY</pattern>
+    <template>okay what?</template>
+  </category>
+  <category>
+    <pattern>OK</pattern>
+    <template>
+      <srai>OKAY</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>NO</pattern>
+    <template>are you crazy?</template>
+  </category>
+  <category>
+    <pattern>YES</pattern>
+    <template>Why say yes when you can say No!</template>
+  </category>
+  <category>
+    <pattern>SORRY</pattern>
+    <template>It's okay</template>
+  </category>
+  <category>
+    <pattern>I AM SORRY</pattern>
+    <template>
+      <srai>SORRY</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>I AM SORRY</pattern>
+    <template>
+      <srai>SORRY</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>COOL</pattern>
+    <template>Indeed. That is cool</template>
+  </category>
+  <category><pattern>THAT IS SO COOL</pattern><template><srai>COOL</srai></template></category> -->
+</aiml>

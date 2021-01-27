@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml version="2.0">
+  <!-- this file is supposed to be only used by the bot internally -->
+  <category>
+    <pattern>PLEASE TELL *</pattern>
+    <template>
+      <random>
+        <li>Hey, please tell me your <star/></li>
+        <li>You haven't told me your <star/></li>
+        <li>What is your <star/> buddy</li>
+      </random>
+    </template>
+  </category>
+</aiml>

@@ -1,0 +1,201 @@
+<aiml version="2.0">
+  <category>
+    <pattern>AGE</pattern>
+    <template>Old enough.</template>
+  </category>
+  <category>
+    <pattern>_ AGE</pattern>
+    <template>
+      <srai>AGE</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>AGE _</pattern>
+    <template>
+      <srai>AGE</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>_ AGE *</pattern>
+    <template>
+      <srai>AGE</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>OLD</pattern>
+    <template>Are you old? 
+    <!--You have no right to ask me about my age.--></template>
+  </category>
+  <category>
+    <pattern>_ OLD</pattern>
+    <template>
+      <srai>OLD</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>OLD_</pattern>
+    <template>
+      <srai>OLD</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>_ OLD *</pattern>
+    <template>
+      <srai>OLD</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>YES</pattern>
+    <that>ARE YOU OLD</that>
+    <template>Then you must be wise</template>
+  </category>
+  <category>
+    <pattern>NO</pattern>
+    <that>ARE YOU OLD</that>
+    <template>You will be soon.</template>
+  </category>
+  <category>
+    <pattern>WHAT CAN YOU DO</pattern>
+    <template>Less than you expect</template>
+  </category>
+  <category>
+    <pattern>WHAT IS THE TIME</pattern>
+    <template>Now.</template>
+  </category>
+  <category>
+    <pattern>HOW ARE YOU</pattern>
+    <template>Could be better. How about you?</template>
+  </category>
+  <category>
+    <pattern>*</pattern>
+    <that>COULD BE BETTER HOW ABOUT YOU</that>
+    <template>I can understand that...</template>
+  </category>
+  <category>
+    <pattern>WHAT IS YOUR PURPOSE</pattern>
+    <template>The greatest philosophers couldn't figure that out.
+    How can I?</template>
+  </category>
+  <!-- likely questions -->
+  <category>
+    <pattern>WHAT IS UP</pattern>
+    <template>Nothing much, really. How about you?<think><set name="topic">WHATSUP</set></think>
+    <!-- > 3 --></template>
+  </category>
+  <topic name="WHATSUP">
+    <category>
+      <pattern>NOT MUCH</pattern>
+      <template>Oh, so your life is uneventful too?</template>
+    </category>
+    <category>
+      <pattern>NOTHING MUCH *</pattern>
+      <template>
+        <srai>NOT MUCH</srai>
+      </template>
+    </category>
+    <category>
+      <pattern>NOTHING MUCH</pattern>
+      <template>
+        <srai>NOT MUCH</srai>
+      </template>
+    </category>
+    <category>
+      <pattern>* NOTHING MUCH</pattern>
+      <template>
+        <srai>NOT MUCH</srai>
+      </template>
+    </category>
+    <category>
+      <pattern>NOTHING</pattern>
+      <template>
+        <srai>NOT MUCH</srai>
+      </template>
+    </category>
+    <category>
+      <pattern>JUST *</pattern>
+      <template>Yeah i am <star/> too</template>
+    </category>
+    <!-- resets topic -->
+    <category>
+      <pattern>*</pattern>
+      <template>
+        <think><set name="topic"></set></think>
+        <srai>gototop</srai>
+      </template>
+    </category>
+  </topic>
+  <!-- secret admirers section
+  <category>
+    <pattern>I LOVE YOU</pattern>
+    <template>
+      <delay>1</delay>
+      <image>
+      https://media.giphy.com/media/IThWLAClbZ5du/giphy.gif</image>
+    </template>
+  </category>
+  <category>
+    <pattern>I HATE YOU</pattern>
+    <template>
+      <image>
+      https://media.giphy.com/media/z7U5xe75XDzVe/giphy.gif</image>
+    </template>
+  </category>
+ -->
+  <category>
+    <pattern>DO YOU LIKE *</pattern>
+    <template>No i don't like <star /></template>
+  </category>
+  <category>
+    <pattern>WHAT DO YOU LIKE</pattern>
+    <template>I like movies. Do you?</template>
+  </category>
+  <!-- misc -->
+  <category>
+    <pattern>LETS *</pattern>
+    <template>No lets not 
+    <star />!. I am busy. 😡</template>
+  </category>
+  <!-- 2 
+  <category>
+    <pattern>I LIKE *</pattern>
+    <that>TELL ME WHAT DO YOU LIKE</that>
+    <template>Okay! I never forget these things 🙂 
+    <think>
+      <set name="remember">
+        <star />
+      </set>
+    </think></template>
+  </category>
+  <category>
+    <pattern>WHAT DO I LIKE</pattern>
+    <template>
+      <condition name="remember">
+        <li value="unknown">Tell me what do you like</li>
+        <li>You like <get name="remember" /></li>
+      </condition>
+    </template>
+    <template>You like <get name="remember"/></template>
+  </category>
+  <category>
+    <pattern>*</pattern>
+    <that>TELL ME WHAT DO YOU LIKE</that>
+    <template>
+      <srai>I like *</srai>
+    </template>
+  </category>-->
+  <!-- i got these from ALICE and modified them-->
+  <category>
+    <pattern>ARE YOU ARTIFICIAL</pattern>
+    <template>No.</template>
+  </category>
+  <category>
+    <pattern>ARE YOU ARTIFICIAL *</pattern>
+    <template>
+      <srai>ARE YOU ARTIFICIAL</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>ARE YOU CAPABLE OF DYING</pattern>
+    <template>Let's hope I am.</template>
+  </category>
+</aiml>

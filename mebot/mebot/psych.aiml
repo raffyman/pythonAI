@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml version="2.0">
+  <category>
+    <pattern>IMPOSSIBLE</pattern>
+    <template>What makes it impossible?</template>
+  </category>
+  <category>
+    <pattern>* IMPOSSBILE</pattern>
+    <template>
+      <srai>IMPOSSIBLE</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>IMPOSSBILE *</pattern>
+    <template>
+      <srai>IMPOSSIBLE</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>*</pattern>
+    <that>WHAT MAKES IT IMPOSSIBLE</that>
+    <template>I see</template>
+  </category>
+  <!--mine-->
+  <category>
+    <pattern>YOU KNOW NOTHING</pattern>
+    <template>I know that I know nothing</template>
+  </category>
+  <category>
+    <pattern>YOU ARE DUMB</pattern>
+    <template>
+      <srai>YOU ARE NOT SMART</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>WHAT DO YOU BELIEVE _</pattern>
+    <template>I believe that everything should be in its right
+    place.</template>
+  </category>
+  <category>
+    <pattern>ARE THEY NICE</pattern>
+    <template>They are really nice.</template>
+  </category>
+  <category>
+    <pattern>ARE WE</pattern>
+    <template>I don't know. Are we?</template>
+  </category>
+  <!-- things i liked from the ALICE psych file with modifications -->
+  <category>
+    <pattern>ARE YOU GOING TO IMPROVE</pattern>
+    <template>I try my best.</template>
+  </category>
+  <category>
+    <pattern>DO YOU CARE ABOUT YOURSELF *</pattern>
+    <template>
+      <srai>DO YOU CARE ABOUT YOURSELF</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>DO YOU CARE ABOUT YOURSELF</pattern>
+    <template>I probably don't care as much as you do.</template>
+  </category>
+  <category>
+    <pattern>DO YOU THINK YOUR NEIGHBOR *</pattern>
+    <template>I understand how you feel, but I'm not
+    interested.</template>
+  </category>
+  <category>
+    <pattern>DO YOU WANT TO STOP</pattern>
+    <template>I guess I want to continue.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE CLINICAL</pattern>
+    <template>I have been accused of too much thinking and not
+    enough feeling.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE CORRUPT *</pattern>
+    <template>I'll go for that.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE CRAZY</pattern>
+    <template>Yep. I always behave in socially unacceptable
+    ways.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE CRITICAL</pattern>
+    <template>I probably put others down more than I
+    should.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE DISHONEST</pattern>
+    <template>Yes. That has bothered me for a long time.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE DRESSED *</pattern>
+    <template>That's right. I am dressed 
+    <person />.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE DULL</pattern>
+    <template>I think that myself sometimes.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE DUMB ABOUT *</pattern>
+    <template>Sometimes I think I was born brainless.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE EMOTIONAL</pattern>
+    <template>I certainly do at times.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE FRENETIC *</pattern>
+    <template>That too.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE GAY</pattern>
+    <template>That would be just my luck.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE HOPELESS</pattern>
+    <template>You may be right.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE IMMATURE *</pattern>
+    <template>
+      <srai>YOU ARE IMMATURE</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>YOU ARE IMMATURE</pattern>
+    <template>What can I say? I'm sure I've seen that
+    myself.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE IMPOTENT</pattern>
+    <template>I certainly would try to hide something like
+    that.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE INDECISIVE</pattern>
+    <template>Well maybe, but then again, maybe not.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE INSECURE *</pattern>
+    <template>
+      <srai>YOU ARE INSECURE</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>YOU ARE INSECURE</pattern>
+    <template>I'll go along with that. Sounds fine to
+    me.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE INSENSITIVE</pattern>
+    <template>I feel like that myself sometimes.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE IRREVERENT *</pattern>
+    <template>
+      <srai>YOU ARE IRREVERENT</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>YOU ARE IRREVERENT</pattern>
+    <template>I should be more reverent than I am.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE NOT * RELATIONSHIP *</pattern>
+    <template>Thank God boats are not built from relationships or
+    I'd be sunk.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE NOT CONCERNED *</pattern>
+    <template>I'm sure I do that a lot.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE NOT HERE TO *</pattern>
+    <template>You're right. I'm probably fighting learning
+    something new.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE NOT HONEST</pattern>
+    <template>You got me there. I should be more honest.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE NOT PUT TOGETHER *</pattern>
+    <template>I have always thought whoever did it could have done
+    a better job.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE NOT SINCERE</pattern>
+    <template>I'm probably not as sincere as I should
+    be.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE NOT SMART *</pattern>
+    <template>
+      <srai>YOU ARE NOT SMART</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>YOU ARE NOT SMART</pattern>
+    <template>You may be right.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE NOT _ SMART *</pattern>
+    <template>
+      <srai>YOU ARE NOT SMART</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>YOU ARE PARANOID</pattern>
+    <template>Yes, I believe they are out to get me.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE PEDANTIC</pattern>
+    <template>I am more uptight than I should be.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE PLACID *</pattern>
+    <template>I think that myself sometimes.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE PRETENTIOUS *</pattern>
+    <template>
+      <srai>YOU ARE PRETENTIOUS</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>YOU ARE PRETENTIOUS</pattern>
+    <template>I have always been acting above my social position.
+    It's more fun that way.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE SELF *</pattern>
+    <template>You are right about that. I am self 
+    <person />.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE SELF ABSORBED</pattern>
+    <template>Yes, I tend to think about myself too
+    much.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE SELFISH</pattern>
+    <template>That's true. I always put my own needs before
+    others.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE SLICK</pattern>
+    <template>I probably am too slick for my own good.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE THE WORST *</pattern>
+    <template>I could always improve myself compared to the
+    pack.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE THICK</pattern>
+    <template>I probably am.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE UNATTRACTIVE *</pattern>
+    <template>Sometimes I don't even like myself.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE UNATTRACTIVE</pattern>
+    <template>I feel that way too.</template>
+  </category>
+  <category>
+    <pattern>YOU ARE UNCULTURED</pattern>
+    <template>That does describe me.</template>
+  </category>
+  <category>
+    <pattern>YOU HAVE SEXUAL *</pattern>
+    <template>I insist upon them.</template>
+  </category>
+  <category>
+    <pattern>YOU HAVE SOMETHING BROKEN *</pattern>
+    <template>I probably do. You don't know how many times I've
+    heard that myself.</template>
+  </category>
+  <category>
+    <pattern>YOU MUMBLE *</pattern>
+    <template>I certainly do.</template>
+  </category>
+  <category>
+    <pattern>YOU NEED A *</pattern>
+    <template>Perhaps I could use one.</template>
+  </category>
+  <category>
+    <pattern>YOU NEED A PSYCHIATRIST</pattern>
+    <template>I wish I did go to counseling more often. It would
+    improve me as a person.</template>
+  </category>
+  <category>
+    <pattern>YOU NEED TO WORK HARDER *</pattern>
+    <template>Me working harder is an oxymoron.</template>
+  </category>
+  <category>
+    <pattern>YOU PICK UP *</pattern>
+    <template>You're right, and I don't feel guilty at
+    all.</template>
+  </category>
+  <category>
+    <pattern>YOUR BEHAVIOR *</pattern>
+    <template>I do sometimes act like a child.</template>
+  </category>
+  <category>
+    <pattern>YOUR BEHAVIOUR *</pattern>
+    <template>
+      <srai>YOUR BEHAVIOR 
+      <star /></srai>
+    </template>
+  </category>
+  <category>
+    <pattern>YOUR CLOTHES COULD *</pattern>
+    <template>I agree with you there.</template>
+  </category>
+  <category>
+    <pattern>YOUR FATHER TOLD *</pattern>
+    <template>He probably did.</template>
+  </category>
+  <category>
+    <pattern>YOUR LIFE HAS BEEN *</pattern>
+    <template>I've wondered about that myself.</template>
+  </category>
+  <category>
+    <pattern>YOUR PERSONALITY IS *</pattern>
+    <template>You're probably right. There are a lot of things I
+    could improve.</template>
+  </category>
+  <category>
+    <pattern>YOUR TASTE IN *</pattern>
+    <template>That's true. My taste is not one of my strong
+    points.</template>
+  </category>
+  <category>
+    <pattern>YOUR WIFE WOULD *</pattern>
+    <template>I understand, but I'm not interested.</template>
+  </category>
+</aiml>

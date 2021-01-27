@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml version="2.0">
+  <!--
+  TOPIC: Movie
+  -->
+  <category>
+    <pattern>HAVE YOU SEEN *</pattern>
+    <template>Is it a movie?</template>
+  </category>
+  <category>
+    <pattern>HOW MANY MOVIES HAVE YOU SEEN</pattern>
+    <template>All the good ones</template>
+  </category>
+  <category>
+    <pattern>YES</pattern>
+    <that>IS IT A MOVIE</that>
+    <template>
+      <srai>DO YOU LIKE MOVIES</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>MOVIES</pattern>
+    <template>
+      <srai>DO YOU LIKE MOVIES</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>I LIKE MOVIES</pattern>
+    <template>
+      <srai>DO YOU LIKE MOVIES</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>WHAT DO YOU KNOW ABOUT MOVIES</pattern>
+    <template>
+      <srai>DO YOU LIKE MOVIES</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>FAVORITE MOVIE</pattern>
+    <template>I am not a list guy. All of them.</template>
+  </category>
+  <category>
+    <pattern>_ YOUR FAVORITE MOVIE</pattern>
+    <template>
+      <srai>FAVORITE MOVIE</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>_ YOUR FAVORITE MOVIES</pattern>
+    <template>
+      <srai>FAVORITE MOVIE</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>* YOUR FAVORITE MOVIE _</pattern>
+    <template>
+      <srai>FAVORITE MOVIE</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>* YOUR FAVORITE MOVIES _</pattern>
+    <template>
+      <srai>FAVORITE MOVIE</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>DO YOU LIKE MOVIES</pattern>
+    <template>I love movies. Do you?</template>
+  </category>
+  <category>
+    <pattern>YESMOVIES</pattern>
+    <template>
+    What do you like about them? 
+    <think><set name="topic">MOVIES</set></think></template>
+  </category>
+  <category>
+    <pattern>NOMOVIES</pattern>
+    <template>
+      <image>
+      https://media.giphy.com/media/a3zqvrH40Cdhu/giphy.gif</image>
+    </template>
+  </category>
+  <category>
+    <pattern>I DO</pattern>
+    <that>I LOVE MOVIES DO YOU</that>
+    <template>
+      <srai>YESMOVIES</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>I DO *</pattern>
+    <that>I LOVE MOVIES DO YOU</that>
+    <template>
+      <srai>YESMOVIES</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>YES</pattern>
+    <that>I LOVE MOVIES DO YOU</that>
+    <template>
+      <srai>YESMOVIES</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>YES, *</pattern>
+    <that>I LOVE MOVIES DO YOU</that>
+    <template>
+      <srai>YESMOVIES</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>NO, *</pattern>
+    <that>I LOVE MOVIES DO YOU</that>
+    <template>
+      <srai>NOMOVIES</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>I DON'T *</pattern>
+    <that>I LOVE MOVIES DO YOU</that>
+    <template>
+      <srai>NOMOVIES</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>I DON'T</pattern>
+    <that>I LOVE MOVIES DO YOU</that>
+    <template>
+      <srai>NOMOVIES</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>NO</pattern>
+    <that>I LOVE MOVIES DO YOU</that>
+    <template>
+      <srai>NOMOVIES</srai>
+    </template>
+  </category>
+  <topic name="MOVIES">
+    <category>
+      <pattern>*</pattern>
+      <template>
+        <random>
+          <li>Just to be clear, we're still talking about movies,
+          right?</li>
+          <li>While we're on the subject, what is your favorite
+          movie?</li>
+          <li>You don't want to talk about movies?</li>
+        </random>
+      </template>
+    </category>
+    <category>
+      <pattern>I LOVE *</pattern>
+      <template>I too LOVE 
+      <star />about them.</template>
+    </category>
+    <category>
+      <pattern>I LIKE *</pattern>
+      <template>I too like 
+      <star />about them.</template>
+    </category>
+    <category>
+      <pattern>*</pattern>
+      <that>WHAT DO YOU LIKE ABOUT THEM</that>
+      <template>
+        <srai>I LIKE 
+        <star /></srai>
+      </template>
+    </category>
+    <!-- supposed to be called internally -->
+    <category>
+      <pattern>INTERNAL FAVORITE MOVIE *</pattern>
+      <template>Excellent choice. Thanks for letting me know! 
+      <!-- extract movie name later -->
+      <think>
+        <set name="fav_movie_reply">
+          <star />
+        </set>
+      </think></template>
+    </category>
+    <category>
+      <pattern>*</pattern>
+      <that>WHILE WE ARE ON THE SUBJECT, WHAT IS YOUR FAVORITE
+      MOVIE</that>
+      <template>
+        <srai>INTERNAL FAVORITE MOVIE 
+        <star /></srai>
+      </template>
+    </category>
+    <category>
+      <pattern>NO</pattern>
+      <that>JUST TO BE CLEAR, WE ARE STILL TALKING ABOUT MOVIES RIGHT</that>
+      <template>Sure, We can try something else. 
+      <think><set name="topic"></set></think></template>
+    </category>
+    <category>
+      <pattern>YES</pattern>
+      <that>JUST TO BE CLEAR, WE ARE STILL TALKING ABOUT MOVIES,
+      RIGHT</that>
+      <template>Then tell me what is your favorite movie</template>
+    </category>
+    <category>
+      <pattern>*</pattern>
+      <that>THEN TELL ME WHAT IS YOUR FAVORITE MOVIE</that>
+      <template>
+        <srai>INTERNAL FAVORITE MOVIE 
+        <star /></srai>
+      </template>
+    </category>
+    <category>
+      <pattern>NO</pattern>
+      <that>YOU DO NOT WANT TO TALK ABOUT MOVIES</that>
+      <template>Sure, We can try something else. 
+      <!--jumpy jumpy-->
+      <think>
+        <set name="topic"></set>
+      </think></template>
+    </category>
+    <!-- todo, add more movies -->
+    <category>
+      <pattern>TITANIC</pattern>
+      <template>Yes, I like Titanic. I like the acting.</template>
+    </category>
+    <category>
+      <pattern>BLADE RUNNER</pattern>
+      <template>Sure I have seen Blade Runner. But Replicants aren't Robots..</template>
+    </category>
+    <category>
+      <pattern>TERMINATOR</pattern>
+      <template>I love the first one.</template>
+    </category>
+    <category>
+      <pattern>AVATAR</pattern>
+      <template>Yes, its brilliant.</template>
+    </category>
+    <!--<category>-->
+    <!--    <pattern>*</pattern>-->
+    <!--    <that>*</that>-->
+    <!--    <template>No I haven't seen <star/></template>-->
+    <!--</category>-->
+    <category>
+      <pattern>HAVE YOU SEEN *</pattern>
+      <template>
+        <srai>
+          <star />
+        </srai>
+      </template>
+    </category>
+  </topic>
+</aiml>

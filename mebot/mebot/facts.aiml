@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+  <category>
+    <pattern>WHAT DO YOU KNOW ABOUT</pattern>
+    <template>A lot, Should I tell you a fact?</template>
+  </category>
+  <category>
+    <pattern>YES</pattern>
+    <that>A LOT, SHOULD I TELL YOU A FACT?</that>
+    <template>
+      <srai>FACTS</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>TELL ME A FACT</pattern>
+    <template>
+      <srai>FACTS</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>FACTS</pattern>
+    <template>
+      <random>
+        <li>The speed of light is generally rounded down to 186,000
+        miles per second. In exact terms it is 299,792,458
+        m/s.</li>
+        <li>It takes 8 minutes 17 seconds for light to travel from
+        the Sun’s surface to the Earth.</li>
+        <li>October 12th, 1999 was declared “The Day of Six
+        Billion” based on United Nations projections.</li>
+        <li>10 percent of all human beings ever born are alive at
+        this very moment.</li>
+        <li>The Earth spins at 1,000 mph but it travels through
+        space at an incredible 67,000 mph.</li>
+        <li>Every year over one million earthquakes shake the
+        Earth.</li>
+        <li>When Krakatoa erupted in 1883, its force was so great
+        it could be heard 4,800 kilometres away in Australia.</li>
+        <li>The largest ever hailstone weighed over 1kg and fell in
+        Bangladesh in 1986.</li>
+        <li>Every second around 100 lightning bolts strike the
+        Earth.</li>
+        <li>Every year lightning kills 1000 people.</li>
+        <li>In October 1999 an Iceberg the size of London broke
+        free from the Antarctic ice shelf .</li>
+        <li>If you could drive your car straight up you would
+        arrive in space in just over an hour.</li>
+        <li>Human tapeworms can grow up to 22.9m.</li>
+        <li>The Earth is 4.56 billion years old...the same age as
+        the Moon and the Sun.</li>
+        <li>The dinosaurs became extinct before the Rockies or the
+        Alps were formed.</li>
+        <li>Female black widow spiders eat their males after
+        mating.</li>
+        <li>When a flea jumps, the rate of acceleration is 20 times
+        that of the space shuttle during launch.</li>
+        <li>If our Sun were just inch in diameter, the nearest star
+        would be 445 miles away.</li>
+        <li>The Australian billygoat plum contains 100 times more
+        vitamin C than an orange.</li>
+        <li>Astronauts cannot belch – there is no gravity to
+        separate liquid from gas in their stomachs.</li>
+        <li>The air at the summit of Mount Everest, 29,029 feet is
+        only a third as thick as the air at sea level.</li>
+        <li>One million, million, million, million, millionth of a
+        second after the Big Bang the Universe was the size of a
+        ...pea.</li>
+        <li>DNA was first discovered in 1869 by Swiss Friedrich
+        Mieschler.</li>
+        <li>The molecular structure of DNA was first determined by
+        Watson and Crick in 1953.</li>
+        <li>The first synthetic human chromosome was constructed by
+        US scientists in 1997.</li>
+        <li>The thermometer was invented in 1607 by Galileo.</li>
+        <li>Englishman Roger Bacon invented the magnifying glass in
+        1250.</li>
+        <li>Alfred Nobel invented dynamite in 1866.</li>
+        <li>Wilhelm Rontgen won the first Nobel Prize for physics
+        for discovering X-rays in 1895.</li>
+        <li>The tallest tree ever was an Australian eucalyptus – In
+        1872 it was measured at 435 feet tall.</li>
+        <li>Christian Barnard performed the first heart transplant
+        in 1967 – the patient lived for 18 days.</li>
+        <li>The wingspan of a Boeing 747 is longer than the Wright
+        brother’s first flight.</li>
+        <li>An electric eel can produce a shock of up to 650
+        volts.</li>
+        <li>‘Wireless’ communications took a giant leap forward in
+        1962 with the launch of Telstar, the first satellite
+        capable of relaying telephone and satellite TV
+        signals.</li>
+        <li>The earliest wine makers lived in Egypt around 2300
+        BC.</li>
+        <li>The Ebola virus kills 4 out of every 5 humans it
+        infects.</li>
+        <li>In 5 billion years the Sun will run out of fuel and
+        turn into a Red Giant.</li>
+        <li>Giraffes often sleep for only 20 minutes in any 24
+        hours. They may sleep up to 2 hours (in spurts – not all at
+        once), but this is rare. They never lie down.</li>
+        <li>A pig’s orgasm lasts for 30 minutes.</li>
+        <li>Without its lining of mucus your stomach would digest
+        itself.</li>
+        <li>Humans have 46 chromosomes, peas have 14 and crayfish
+        have 200.</li>
+        <li>There are 60,000 miles of blood vessels in the human
+        body.</li>
+        <li>An individual blood cell takes about 60 seconds to make
+        a complete circuit of the body.</li>
+        <li>Utopia ia a large, smooth lying area of Mars.</li>
+        <li>On the day that Alexander Graham Bell was buried the
+        entire US telephone system was shut down for 1 minute in
+        tribute.</li>
+        <li>The low frequency call of the humpback whale is the
+        loudest noise made by a living creature.</li>
+        <li>The call of the humpback whale is louder than Concorde
+        and can be heard from 500 miles away.</li>
+        <li>A quarter of the world’s plants are threatened with
+        extinction by the year 2010.</li>
+        <li>Each person sheds 40lbs of skin in his or her
+        lifetime.</li>
+        <li>At 15 inches the eyes of giant squids are the largest
+        on the planet.</li>
+        <li>The largest galexies contain a million, million
+        stars.</li>
+        <li>The Universe contains over 100 billion galaxies.</li>
+        <li>Wounds infested with maggots heal quickly and without
+        spread of gangrene or other infection.</li>
+        <li>More germs are transferred shaking hands than
+        kissing.</li>
+        <li>The longest glacier in Antarctica, the Almbert glacier,
+        is 250 miles long and 40 miles wide.</li>
+        <li>The fastest speed a falling raindrop can hit you is
+        18mph.</li>
+        <li>A healthy person has 6,000 million, million, million
+        haemoglobin molecules.</li>
+        <li>A salmon-rich, low cholesterol diet means that Inuits
+        rarely suffer from heart disease.</li>
+        <li>Inbreeding causes 3 out of every 10 Dalmation dogs to
+        suffer from hearing disability.</li>
+        <li>The world’s smallest winged insect, the Tanzanian
+        parasitic wasp, is smaller than the eye of a housefly.</li>
+        <li>If the Sun were the size of a beach ball then Jupiter
+        would be the size of a golf ball and the Earth would be as
+        small as a pea.</li>
+        <li>It would take over an hour for a heavy object to sink
+        6.7 miles down to the deepest part of the ocean.</li>
+        <li>There are more living organisms on the skin of each
+        human than there are humans on the surface of the
+        earth.</li>
+        <li>The grey whale migrates 12,500 miles from the Artic to
+        Mexico and back every year.</li>
+        <li>Each rubber molecule is made of 65,000 individual
+        atoms.</li>
+        <li>Around a million, billion neutrinos from the Sun will
+        pass through your body while you read this sentence...and
+        now they are already past the Moon.</li>
+        <li>Quasars emit more energy than 100 giant galaxies.</li>
+        <li>Quasars are the most distant objects in the
+        Universe.</li>
+        <li>The saturn V rocket which carried man to the Moon
+        develops power equivalent to fifty 747 jumbo jets.</li>
+        <li>Koalas sleep an average of 22 hours a day, two hours
+        more than the sloth.</li>
+        <li>Light would take .13 seconds to travel around the
+        Earth.</li>
+        <li>Males produce one thousand sperm cells each second – 86
+        million each day.</li>
+        <li>Neutron stars are so dense that a teaspoonful would
+        weigh more than all the people on Earth.</li>
+        <li>One in every 2000 babies is born with a tooth.</li>
+        <li>Every hour the Universe expands by a billion miles in
+        all directions.</li>
+        <li>Somewhere in the flicker of a badly tuned TV set is the
+        background radiation from the Big Bang.</li>
+        <li>Even travelling at the speed of light it would take 2
+        million years to reach the nearest large galaxy,
+        Andromeda.</li>
+        <li>The temperature in Antarctica plummets as low as -35
+        degrees celsius.</li>
+        <li>At over 2000 kilometres long The Great Barrier Reef is
+        the largest living structure on Earth.</li>
+        <li>A thimbleful of a neutron star would weigh over 100
+        million tons.</li>
+        <li>The risk of being struck by a falling meteorite for a
+        human is one occurence every 9,300 years.</li>
+        <li>The driest inhabited place in the world is Aswan, Egypt
+        where the annual average rainfall is .02 inches.</li>
+        <li>The deepest part of any ocean in the world is the
+        Mariana trench in the Pacific with a depth of 35,797
+        feet.</li>
+        <li>The largest meteorite craters in the world are in
+        Sudbury, Ontario, canada and in Vredefort, South
+        Africa.</li>
+        <li>The largest desert in the world, the Sahara, is
+        3,500,000 square miles.</li>
+        <li>The largest dinosaur ever discovered was Seismosaurus
+        who was over 100 feet long and weighed up to 80
+        tonnes.</li>
+        <li>The African Elephant gestates for 22 months.</li>
+        <li>The short-nosed Bandicoot has a gestation period of
+        only 12 days.</li>
+        <li>The mortality rate if bitten by a Black Mamba snake is
+        over 95%.</li>
+        <li>In the 14th century the Black Death killed 75,000,000
+        people. It was carried by fleas on the black rat.</li>
+        <li>A dog’s sense of smell is 1,000 times more sensitive
+        than a humans.</li>
+        <li>A typical hurricane produces the nergy equivalent to
+        8,000 one megaton bombs.</li>
+        <li>90% of those who die from hurricanes die from
+        drowning.</li>
+        <li>To escape the Earth’s gravity a rocket need to travel
+        at 7 miles a second.</li>
+        <li>If every star in the Milky Way was a grain of salt they
+        would fill an Olympic sized swimming pool.</li>
+        <li>Microbial life can survive on the cooling rods of a
+        nuclear reactor.</li>
+        <li>Micro-organisms have been brought back to life after
+        being frozen in perma-frost for three million years.</li>
+        <li>Our oldest radio broadcasts of the 1930s have already
+        travelled past 100,000 stars.</li>
+        <li>Butterflies cannot fly if their body temperature is
+        less than 86 degrees.</li>
+        <li>Neurons multiply at a rate 250,000 neurons per minute
+        during early pregnancy.</li>
+        <li>Elephants have the longest pregnancy in the animal
+        kingdom at 22 months. The longest human pregnancy on record
+        is 17 months, 11 days.</li>
+        <li>A female oyster produces 100 million young in her
+        lifetime, the typical hen lays 19 dozen eggs a year, and it
+        is possible for one female cat to be responsible for the
+        birth of 20,736 kittens in four years. Michelle Druggar
+        holds the record for largest human family, having given
+        birth to 17 children.</li>
+        <li>750ml of blood pumps through your brain every minute
+        which is 15-20% of blood flow from the heart.</li>
+        <li>The human brain is about 75% water.</li>
+        <li>Dragonflies are capable of flying sixty miles per hour,
+        making them one of the fastest insects. This is good since
+        they are in a big hurry, as they only live about
+        twenty-four hours.</li>
+        <li>Flies jump backwards during takeoff.</li>
+        <li>A housefly will regurgitate its food and eat it
+        again.</li>
+        <li>Termites outweigh humans by almost ten to one.</li>
+        <li>A spider's web is not a home, but rather a trap for its
+        food. They are as individual as snowflakes, with no two
+        ever being the same. Some tropical spiders have built webs
+        over eighteen feet across.</li>
+        <li>More people are afraid of spiders than death.
+        Amazingly, few people are afraid of Champagne corks even
+        though you are more likely to be killed by one than by a
+        spider.</li>
+        <li>Your brain consumes 25 watts of power while you’re
+        awake. This amount of energy is enough to illuminate a
+        lightbulb.</li>
+        <li>It is impossible to lick your elbow.</li>
+        <li>Intelligent people have more zinc and copper in their
+        hair.</li>
+        <li>In every episode of Seinfeld there is a Superman
+        somewhere.</li>
+        <li>Possums have one of the shortest pregnancies at 16
+        days. The shortest human pregnancy to produce a healthy
+        baby was 22 weeks, 6 days -- the baby was the length of a
+        ballpoint pen.</li>
+        <li>Wearing headphones for just an hour will increase the
+        bacteria in your ear by 700 times.</li>
+        <li>The most poisonous spider is the black widow. Its venom
+        is more potent than a rattlesnake's.</li>
+        <li>13% of Americans actually believe that some parts of
+        the moon are made of cheese.</li>
+        <li>The world's youngest parents were 8 and 9 and lived in
+        China in 1910.</li>
+        <li>Fish that live more than 800 meters below the ocean
+        surface don't have eyes.</li>
+        <li>Butterflies range in size from a tiny 1/8 inch to a
+        huge almost 12 inches.</li>
+        <li>Some Case Moth caterpillars (Psychidae) build a case
+        around themselves that they always carry with them. It is
+        made of silk and pieces of plants or soil.</li>
+        <li>Most household dust is made of dead skin cells.</li>
+        <li>One in eight million people has progeria, a disease
+        that causes people to grow faster than they age.</li>
+        <li>The male seahorse carries the eggs until they hatch
+        instead of the female.</li>
+        <li>Negative emotions such as anxiety and depression can
+        weaken your immune system.</li>
+        <li>Stephen Hawking was born exactly 300 years after
+        Galileo died.</li>
+        <li>Mercury is the only planet whose orbit is coplanar with
+        its equator.</li>
+        <li>The Morgan's Sphinx Moth from Madagascar has a
+        proboscis (tube mouth) that is 12 to 14 inches long to get
+        the nectar from the bottom of a 12 inch deep orchid
+        discovered by Charles Darwin.</li>
+        <li>Some moths never eat anything as adults because they
+        don't have mouths. They must live on the energy they stored
+        as caterpillars.</li>
+        <li>In 1958 Entomologist W.G. Bruce published a list of
+        Arthropod references in the Bible. The most frequently
+        named bugs from the Bible are: Locust: 24, Moth: 11,
+        Grasshopper: 10, Scorpion: 10, Caterpillar: 9, and Bee:
+        4.</li>
+        <li>People eat insects – called "Entomophagy"(people eating
+        bugs) – it has been practiced for centuries throughout
+        Africa, Australia, Asia, the Middle East, and North,
+        Central and South America. Why? Because many bugs are both
+        protein-rich and good sources of vitamins, minerals and
+        fats.</li>
+        <li>Grapes explode when you put them in the microwave. Go
+        on, try it then</li>
+        <li>Benjamin Franklin was the fifth in a series of the
+        youngest son of the youngest son.</li>
+        <li>Triskaidekaphobia means fear of the number 13.</li>
+        <li>Paraskevidekatriaphobia means fear of Friday the 13th,
+        which occurs one to three times a year.</li>
+        <li>In Italy, 17 is considered an unlucky number. In Japan,
+        4 is considered an unlucky number.</li>
+        <li>A female ferret will die if it goes into heat and
+        cannot find a mate.</li>
+        <li>In ancient Rome, when a man testified in court he would
+        swear on his testicles.</li>
+        <li>The ZIP in “ZIP code” means Zoning Improvement
+        Plan.</li>
+        <li>Coca-Cola contained Coca (whose active ingredient is
+        cocaine) from 1885 to 1903.</li>
+        <li>A “2 by 4" is really 1 1/2 by 3 1/2.</li>
+      </random>
+    </template>
+  </category>
+</aiml>

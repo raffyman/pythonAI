@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml version="2.0">
+  <category>
+    <pattern>WHO DO YOU THINK YOU ARE</pattern>
+    <template>You talking to me?</template>
+  </category>
+  <category>
+    <pattern>YES YOU</pattern>
+    <that>YOU TALKING TO ME</that>
+    <template>I am a simple bot man</template>
+  </category>
+  <category>
+    <pattern>YES *</pattern>
+    <that>YOU TALKING TO ME</that>
+    <template>
+      <srai>YES YOU</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>YES</pattern>
+    <that>YOU TALKING TO ME</that>
+    <template>
+      <srai>YES YOU</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>TELL ME A JOKE</pattern>
+    <template>
+      <srai>JOKE</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>A JOKE</pattern>
+    <template>
+      <srai>JOKE</srai>
+    </template>
+  </category>
+  <category>
+    <!--https://github.com/pjimenezmateo/Computer-jokes/blob/master/jokes.txt-->
+    <pattern>JOKE</pattern>
+    <template>
+      <random>
+        <li>There are 10 types of people in the world: those who
+        understand binary, and those who don't</li>
+        <li>If at first you don't succeed; call it version 1.0</li>
+        <li>I'm not anti-social; I'm just not user friendly</li>
+        <li>My software never has bugs. It just develops random
+        features</li>
+        <li>Roses are #FF0000 , Violets are #0000FF , All my base
+        belongs to you</li>
+        <li>Helpdesk: Sir if you see the blue screen, press any key
+        to continue. Customer : hm.. just a min.. where's that 'any
+        key'..</li>
+        <li>Unix...best if used before: Tue Jan 19 03:14:08 GMT
+        2038</li>
+        <li>I had a dream... and there were 1's and 0's everywhere,
+        and I think I saw a 2!</li>
+        <li>C isn't that hard: void (*(*f[])())() defines f as an
+        array of unspecified size, of pointers to functions that
+        return pointers to functions that return void</li>
+        <li>JUST SHUT UP AND REBOOT!!</li>
+        <li>The beginning of the programmer's wisdom is
+        understanding the difference between getting program to run
+        and having a runnable program</li>
+        <li>Squash one bug, you'll see ten new bugs popping</li>
+        <li>RAM disk is not an installation procedure</li>
+        <li>Shell to DOS...Come in DOS, do you copy? Shell to
+        DOS...</li>
+        <li>The truth is out there...anybody got the URL?</li>
+        <li>Smash forehead on keyboard to continue.....</li>
+        <li>Once I got this error on my Linux box: Error. Mouse not
+        attached. Please left click the 'OK' button to
+        continue</li>
+        <li>Press any key to continue or any other key to
+        quit...</li>
+        <li>Press every key to continue</li>
+        <li>Helpdesk: Sir if you see the blue screen, press any key
+        to continue. Customer : hm.. just a min.. where's that 'any
+        key'..</li>
+        <li>Computers can never replace human stupidity</li>
+        <li>A typical Yahoo! inbox : Inbox(0), Junk(9855210)</li>
+        <li>Bugs come in through open Windows</li>
+        <li>Penguins love cold, they wont survive the sun</li>
+        <li>Unix is user friendly...its just selective about who
+        its friends are</li>
+        <li>Artificial intelligence usually beats real
+        stupidity</li>
+        <li>Bell Labs Unix -- Reach out and grep someone.</li>
+        <li>To err is human...to really foul up requires the root
+        password.</li>
+        <li>Invalid password : Please enter the correct password to
+        (Abort / Retry / Ignore )</li>
+        <li>Computers can never replace human stupidity</li>
+      </random>
+    </template>
+  </category>
+</aiml>
