@@ -1,0 +1,12 @@
+from py2neo import Graph, Node, Relationship
+g = Graph(password="123456")
+node1=Node("Animal", name = "Cat")
+node2=Node("Object", name = "fur")
+node3=Node("Food", name = "meat")
+#g.create(node1)
+#g.create(node2)
+#g.create(node3)
+relationship1 = Relationship(node1, "has", node2)
+relationship2 = Relationship(node1, "eats", node3)
+g.create(relationship1)
+g.create(relationship2)
